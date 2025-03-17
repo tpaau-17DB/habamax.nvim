@@ -68,7 +68,7 @@ local theme = lush(function(injected_functions)
     NvimTreeEmptyFolderName                { Directory }, -- NvimTreeEmptyFolderName xxx links to Directory
     TelescopePreviewDirectory              { Directory }, -- TelescopePreviewDirectory xxx links to Directory
     TelescopePreviewDate                   { Directory }, -- TelescopePreviewDate xxx links to Directory
-    ErrorMsg                               { bg="#1c1c1c", gui="reverse", fg="#d75f5f", }, -- ErrorMsg       xxx cterm=reverse ctermfg=167 ctermbg=234 gui=reverse guifg=#d75f5f guibg=#1c1c1c
+    ErrorMsg                               { bg="#000000", gui="reverse", fg="#d75f5f", }, -- ErrorMsg       xxx cterm=reverse ctermfg=167 ctermbg=234 gui=reverse guifg=#d75f5f guibg=#1c1c1c
     NvimInvalidSpacing                     { ErrorMsg }, -- NvimInvalidSpacing xxx links to ErrorMsg
     LazyTaskError                          { ErrorMsg }, -- LazyTaskError  xxx links to ErrorMsg
     IncSearch                              { fg="#1c1c1c", bg="#ffaf5f", }, -- IncSearch      xxx ctermfg=234 ctermbg=215 guifg=#1c1c1c guibg=#ffaf5f
@@ -115,7 +115,7 @@ local theme = lush(function(injected_functions)
     TelescopeResultsDiffAdd                { DiffAdd }, -- TelescopeResultsDiffAdd xxx links to DiffAdd
     GitSignsAddLn                          { DiffAdd }, -- GitSignsAddLn  xxx links to DiffAdd
     GitSignsAddPreview                     { DiffAdd }, -- GitSignsAddPreview xxx links to DiffAdd
-    DiffChange                             { fg="#000000", bg="#afafaf", }, -- DiffChange     xxx ctermfg=16 ctermbg=145 guifg=#000000 guibg=#afafaf
+    DiffChange                             { fg="#b9b9b9", bg="#afafaf", }, -- DiffChange     xxx ctermfg=16 ctermbg=145 guifg=#000000 guibg=#afafaf
     GitSignsChange                         { DiffChange }, -- GitSignsChange xxx links to DiffChange
     TelescopeResultsDiffChange             { DiffChange }, -- TelescopeResultsDiffChange xxx links to DiffChange
     GitSignsChangeLn                       { DiffChange }, -- GitSignsChangeLn xxx links to DiffChange
@@ -154,7 +154,7 @@ local theme = lush(function(injected_functions)
     WinBarNC                               { WinBar }, -- WinBarNC       xxx links to WinBar
     Cursor                                 { fg="#1c1c1c", bg="#ffaf5f", }, -- Cursor         xxx guifg=#1c1c1c guibg=#ffaf5f
     lCursor                                { fg="#1c1c1c", bg="#5fff00", }, -- lCursor        xxx guifg=#1c1c1c guibg=#5fff00
-    Normal                                 { fg="#bcbcbc", bg="#1c1c1c", }, -- Normal         xxx ctermfg=250 ctermbg=234 guifg=#bcbcbc guibg=#1c1c1c
+    Normal                                 { fg="#bcbcbc", bg="#000000", }, -- Normal         xxx ctermfg=250 ctermbg=234 guifg=#bcbcbc guibg=#1c1c1c
     NvimSpacing                            { Normal }, -- NvimSpacing    xxx links to Normal
     NvimTreeNormal                         { Normal }, -- NvimTreeNormal xxx links to Normal
     NvimTreePopup                          { Normal }, -- NvimTreePopup  xxx links to Normal
@@ -169,11 +169,11 @@ local theme = lush(function(injected_functions)
     RedrawDebugClear                       { bg="yellow", }, -- RedrawDebugClear xxx ctermbg=11 guibg=Yellow
     RedrawDebugComposed                    { bg="green", }, -- RedrawDebugComposed xxx ctermbg=10 guibg=Green
     RedrawDebugRecompose                   { bg="red", }, -- RedrawDebugRecompose xxx ctermbg=9 guibg=Red
-    Error                                  { bg="#1c1c1c", gui="reverse", fg="#d75f5f", }, -- Error          xxx cterm=reverse ctermfg=167 ctermbg=234 gui=reverse guifg=#d75f5f guibg=#1c1c1c
+    Error                                  { bg="#000000", gui="reverse", fg="#d75f5f", }, -- Error          xxx cterm=reverse ctermfg=167 ctermbg=234 gui=reverse guifg=#d75f5f guibg=#1c1c1c
     NvimInvalid                            { Error }, -- NvimInvalid    xxx links to Error
     luaParenError                          { Error }, -- luaParenError  xxx links to Error
     luaError                               { Error }, -- luaError       xxx links to Error
-    Todo                                   { bg="#1c1c1c", gui="reverse", fg="#d7d787", }, -- Todo           xxx cterm=reverse ctermfg=186 ctermbg=234 gui=reverse guifg=#d7d787 guibg=#1c1c1c
+    Todo                                   { bg="#000000", gui="reverse", fg="#d7d787", }, -- Todo           xxx cterm=reverse ctermfg=186 ctermbg=234 gui=reverse guifg=#d7d787 guibg=#1c1c1c
     sym"@text.todo"                        { Todo }, -- @text.todo     xxx links to Todo
     luaTodo                                { Todo }, -- luaTodo        xxx links to Todo
     PopupNotification                      { Todo }, -- PopupNotification xxx links to Todo
@@ -327,7 +327,7 @@ local theme = lush(function(injected_functions)
     LspInfoTip                             { Comment }, -- LspInfoTip     xxx links to Comment
     vimCommentString                       { Comment }, -- vimCommentString xxx links to Comment
     Underlined                             { gui="underline", }, -- Underlined     xxx cterm=underline gui=underline
-    MatchParen                             { bg="#1c1c1c", gui="reverse", fg="#5f8787", }, -- MatchParen     xxx cterm=reverse ctermfg=66 ctermbg=234 gui=reverse guifg=#5f8787 guibg=#1c1c1c
+    MatchParen                             { bg="#000000", gui="reverse", fg="#5f8787", }, -- MatchParen     xxx cterm=reverse ctermfg=66 ctermbg=234 gui=reverse guifg=#5f8787 guibg=#1c1c1c
     NvimInternalError                      { fg="red", bg="red", }, -- NvimInternalError xxx ctermfg=9 ctermbg=9 guifg=Red guibg=Red
     NvimFigureBrace                        { NvimInternalError }, -- NvimFigureBrace xxx links to NvimInternalError
     NvimSingleQuotedUnknownEscape          { NvimInternalError }, -- NvimSingleQuotedUnknownEscape xxx links to NvimInternalError
@@ -723,14 +723,14 @@ local theme = lush(function(injected_functions)
     ALEVirtualTextWarning                  { fg="#1c1c1c", bg="#af87af", }, -- ALEVirtualTextWarning xxx ctermfg=234 ctermbg=139 guifg=#1c1c1c guibg=#af87af
     ALEInfo                                { fg="#d7d787", }, -- ALEInfo        xxx ctermfg=186 guifg=#d7d787
     ALEVirtualTextInfo                     { fg="#d7d787", }, -- ALEVirtualTextInfo xxx ctermfg=186 guifg=#d7d787
-    ToolbarButton                          { bg="#1c1c1c", gui="bold,reverse", fg="#9e9e9e", }, -- ToolbarButton  xxx cterm=bold,reverse ctermfg=247 ctermbg=234 gui=bold,reverse guifg=#9e9e9e guibg=#1c1c1c
+    ToolbarButton                          { bg="#000000", gui="bold,reverse", fg="#9e9e9e", }, -- ToolbarButton  xxx cterm=bold,reverse ctermfg=247 ctermbg=234 gui=bold,reverse guifg=#9e9e9e guibg=#1c1c1c
     VisualNOS                              { fg="#1c1c1c", bg="#5f8787", }, -- VisualNOS      xxx ctermfg=234 ctermbg=66 guifg=#1c1c1c guibg=#5f8787
     debugPC                                { fg="#1c1c1c", bg="#5f87af", }, -- debugPC        xxx ctermfg=234 ctermbg=67 guifg=#1c1c1c guibg=#5f87af
     debugBreakpoint                        { fg="#1c1c1c", bg="#d7875f", }, -- debugBreakpoint xxx ctermfg=234 ctermbg=173 guifg=#1c1c1c guibg=#d7875f
     diffSubname                            { fg="#af87af", }, -- diffSubname    xxx ctermfg=139 guifg=#af87af
     colorizer_mb_585858                    { fg="white", bg="#585858", }, -- colorizer_mb_585858 xxx guifg=White guibg=#585858
     colorizer_mb_87afaf                    { fg="black", bg="#87afaf", }, -- colorizer_mb_87afaf xxx guifg=Black guibg=#87afaf
-    colorizer_mb_1c1c1c                    { fg="white", bg="#1c1c1c", }, -- colorizer_mb_1c1c1c xxx guifg=White guibg=#1c1c1c
+    colorizer_mb_1c1c1c                    { fg="white", bg="#000000", }, -- colorizer_mb_1c1c1c xxx guifg=White guibg=#1c1c1c
     colorizer_mb_d75f5f                    { fg="black", bg="#d75f5f", }, -- colorizer_mb_d75f5f xxx guifg=Black guibg=#d75f5f
     colorizer_mb_ffaf5f                    { fg="black", bg="#ffaf5f", }, -- colorizer_mb_ffaf5f xxx guifg=Black guibg=#ffaf5f
     colorizer_mb_87af87                    { fg="black", bg="#87af87", }, -- colorizer_mb_87af87 xxx guifg=Black guibg=#87af87
