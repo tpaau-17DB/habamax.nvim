@@ -154,7 +154,7 @@ local theme = lush(function(injected_functions)
     WinBarNC                               { WinBar }, -- WinBarNC       xxx links to WinBar
     Cursor                                 { fg="#1c1c1c", bg="#ffaf5f", }, -- Cursor         xxx guifg=#1c1c1c guibg=#ffaf5f
     lCursor                                { fg="#1c1c1c", bg="#5fff00", }, -- lCursor        xxx guifg=#1c1c1c guibg=#5fff00
-    Normal                                 { fg="#bcbcbc", bg="#000000", }, -- Normal         xxx ctermfg=250 ctermbg=234 guifg=#bcbcbc guibg=#1c1c1c
+    Normal                                 { fg="#b9b9b9", bg="#000000", }, -- Normal         xxx ctermfg=250 ctermbg=234 guifg=#b9b9b9 guibg=#1c1c1c
     NvimSpacing                            { Normal }, -- NvimSpacing    xxx links to Normal
     NvimTreeNormal                         { Normal }, -- NvimTreeNormal xxx links to Normal
     NvimTreePopup                          { Normal }, -- NvimTreePopup  xxx links to Normal
@@ -277,7 +277,7 @@ local theme = lush(function(injected_functions)
     TelescopeMultiSelection                { Type }, -- TelescopeMultiSelection xxx links to Type
     NullLsInfoTitle                        { Type }, -- NullLsInfoTitle xxx links to Type
     LspInfoFiletype                        { Type }, -- LspInfoFiletype xxx links to Type
-    Special                                { fg="#5f8787", }, -- Special        xxx ctermfg=66 guifg=#5f8787
+    Special                                { fg="#b9b9b9", }, -- Special        xxx ctermfg=66 guifg=#5f8787
     Tag                                    { Special }, -- Tag            xxx links to Special
     SpecialChar                            { Special }, -- SpecialChar    xxx links to Special
     Delimiter                              { Special }, -- Delimiter      xxx links to Special
@@ -407,13 +407,13 @@ local theme = lush(function(injected_functions)
     lualine_x_7_command                    { bg="#191724", gui="bold", fg="#9ccfd8", }, -- lualine_x_7_command xxx gui=bold guifg=#9ccfd8 guibg=#191724
     lualine_x_7_terminal                   { bg="#191724", gui="bold", fg="#9ccfd8", }, -- lualine_x_7_terminal xxx gui=bold guifg=#9ccfd8 guibg=#191724
     lualine_x_7_inactive                   { bg="#191724", gui="bold", fg="#9ccfd8", }, -- lualine_x_7_inactive xxx gui=bold guifg=#9ccfd8 guibg=#191724
-    lualine_x_diagnostics_error_normal     { fg="#ff0000", bg="#191724", }, -- lualine_x_diagnostics_error_normal xxx guifg=#ff0000 guibg=#191724
-    lualine_x_diagnostics_error_insert     { fg="#ff0000", bg="#191724", }, -- lualine_x_diagnostics_error_insert xxx guifg=#ff0000 guibg=#191724
-    lualine_x_diagnostics_error_visual     { fg="#ff0000", bg="#191724", }, -- lualine_x_diagnostics_error_visual xxx guifg=#ff0000 guibg=#191724
-    lualine_x_diagnostics_error_replace    { fg="#ff0000", bg="#191724", }, -- lualine_x_diagnostics_error_replace xxx guifg=#ff0000 guibg=#191724
-    lualine_x_diagnostics_error_command    { fg="#ff0000", bg="#191724", }, -- lualine_x_diagnostics_error_command xxx guifg=#ff0000 guibg=#191724
-    lualine_x_diagnostics_error_terminal   { fg="#ff0000", bg="#191724", }, -- lualine_x_diagnostics_error_terminal xxx guifg=#ff0000 guibg=#191724
-    lualine_x_diagnostics_error_inactive   { fg="#ff0000", bg="#191724", }, -- lualine_x_diagnostics_error_inactive xxx guifg=#ff0000 guibg=#191724
+    lualine_x_diagnostics_error_normal     { fg="#eb6f92", bg="#191724", }, -- lualine_x_diagnostics_error_normal xxx guifg=#ff0000 guibg=#191724
+    lualine_x_diagnostics_error_insert     { fg="#eb6f92", bg="#191724", }, -- lualine_x_diagnostics_error_insert xxx guifg=#ff0000 guibg=#191724
+    lualine_x_diagnostics_error_visual     { fg="#eb6f92", bg="#191724", }, -- lualine_x_diagnostics_error_visual xxx guifg=#ff0000 guibg=#191724
+    lualine_x_diagnostics_error_replace    { fg="#eb6f92", bg="#191724", }, -- lualine_x_diagnostics_error_replace xxx guifg=#ff0000 guibg=#191724
+    lualine_x_diagnostics_error_command    { fg="#eb6f92", bg="#191724", }, -- lualine_x_diagnostics_error_command xxx guifg=#ff0000 guibg=#191724
+    lualine_x_diagnostics_error_terminal   { fg="#eb6f92", bg="#191724", }, -- lualine_x_diagnostics_error_terminal xxx guifg=#ff0000 guibg=#191724
+    lualine_x_diagnostics_error_inactive   { fg="#eb6f92", bg="#191724", }, -- lualine_x_diagnostics_error_inactive xxx guifg=#ff0000 guibg=#191724
     lualine_x_diagnostics_warn_normal      { fg="#ffa500", bg="#191724", }, -- lualine_x_diagnostics_warn_normal xxx guifg=#ffa500 guibg=#191724
     lualine_x_diagnostics_warn_insert      { fg="#ffa500", bg="#191724", }, -- lualine_x_diagnostics_warn_insert xxx guifg=#ffa500 guibg=#191724
     lualine_x_diagnostics_warn_visual      { fg="#ffa500", bg="#191724", }, -- lualine_x_diagnostics_warn_visual xxx guifg=#ffa500 guibg=#191724
@@ -748,10 +748,10 @@ local theme = lush(function(injected_functions)
     colorizer_mb_d7afd7                    { fg="black", bg="#d7afd7", }, -- colorizer_mb_d7afd7 xxx guifg=Black guibg=#d7afd7
     colorizer_mb_303030                    { fg="white", bg="#303030", }, -- colorizer_mb_303030 xxx guifg=White guibg=#303030
     colorizer_mb_5fff00                    { fg="black", bg="#5fff00", }, -- colorizer_mb_5fff00 xxx guifg=Black guibg=#5fff00
-    colorizer_mb_bcbcbc                    { fg="black", bg="#bcbcbc", }, -- colorizer_mb_bcbcbc xxx guifg=Black guibg=#bcbcbc
+    colorizer_mb_bcbcbc                    { fg="black", bg="#b9b9b9", }, -- colorizer_mb_bcbcbc xxx guifg=Black guibg=#bcbcbc
     colorizer_mb_ffff00                    { fg="black", bg="#ffff00", }, -- colorizer_mb_ffff00 xxx guifg=Black guibg=#ffff00
     colorizer_mb_008000                    { fg="white", bg="#008000", }, -- colorizer_mb_008000 xxx guifg=White guibg=#008000
-    colorizer_mb_ff0000                    { fg="white", bg="#ff0000", }, -- colorizer_mb_ff0000 xxx guifg=White guibg=#ff0000
+    colorizer_mb_ff0000                    { fg="white", bg="#eb6f92", }, -- colorizer_mb_ff0000 xxx guifg=White guibg=#ff0000
     colorizer_mb_afd7af                    { fg="black", bg="#afd7af", }, -- colorizer_mb_afd7af xxx guifg=Black guibg=#afd7af
     colorizer_mb_af87af                    { fg="black", bg="#af87af", }, -- colorizer_mb_af87af xxx guifg=Black guibg=#af87af
     colorizer_mb_87afd7                    { fg="black", bg="#87afd7", }, -- colorizer_mb_87afd7 xxx guifg=Black guibg=#87afd7
