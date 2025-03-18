@@ -277,7 +277,7 @@ local theme = lush(function(injected_functions)
     TelescopeMultiSelection                { Type }, -- TelescopeMultiSelection xxx links to Type
     NullLsInfoTitle                        { Type }, -- NullLsInfoTitle xxx links to Type
     LspInfoFiletype                        { Type }, -- LspInfoFiletype xxx links to Type
-    Special                                { fg="#b9b9b9", }, -- Special        xxx ctermfg=66 guifg=#5f8787
+    Special                                { fg="#5f8787", }, -- Special        xxx ctermfg=66 guifg=#5f8787
     Tag                                    { Special }, -- Tag            xxx links to Special
     SpecialChar                            { Special }, -- SpecialChar    xxx links to Special
     Delimiter                              { Special }, -- Delimiter      xxx links to Special
